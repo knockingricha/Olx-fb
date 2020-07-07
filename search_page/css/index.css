@@ -1,0 +1,141 @@
+:root {
+  --primaryColor: #f09d51;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  font-family: "Lato", sans-serif;
+}
+/* -------------- Navbar ---------------*/
+.navigation_bar {
+  position: sticky;
+  overflow: hidden;
+  top: 0;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /*background: rgb(200, 191, 231);*/
+  background: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+  box-shadow: 0 0 5px rgba(0,0,0,0.9);
+  z-index: 1;
+}
+.navigation_bar-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+.nav-icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.cart-btn {
+  position: relative;
+  cursor: pointer;
+}
+.cart-items {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--primaryColor);
+  padding: 0 5px;
+  border-radius: 30%;
+  color: var(--mainWhite);
+}
+
+.navigation_bar .navigation_bar-center .heading {
+  font: bold;
+  animation-name: dance;
+  overflow: hidden;
+  white-space: nowrap;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  cursor: pointer;
+}
+@keyframes dance {
+  0% {
+    letter-spacing: 2px;
+    width: 0ch;
+    color: green;
+  }
+  100% {
+    color: maroon;
+    letter-spacing: 5px;
+    width: 15ch;
+  }
+}
+/* --------------- End of navigation_bar ---------------- */
+
+/* -------------- Start of Header --------------- */
+
+
+.search-bar form {
+  justify-content: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 20vh;
+  transition: 0.4s ease;
+}
+.active-pink input.form-control[type=text] {
+  border-bottom: 1px solid #f48fb1;
+  box-shadow: 0 1px 0 0 #f48fb1;
+}
+.search-bar .form-inline:hover {
+  transform: scale(1.15);
+}
+
+.searchable_tags .message {
+  margin-left: 0.7rem;
+  font-weight: 520;
+}
+.searchable_tags .tags {
+  display: inline-block;
+  margin-left: 4rem;
+  margin-top: 0.1rem;
+  max-width: 80vw;
+}
+.searchable_tags .tags .tag {
+  text-decoration: underline;
+  margin: 2px;
+  padding: 2px;
+}
+
+hr {
+  margin-top: 2px;
+  margin-left: 3rem;
+  width: 85vw;
+}
+
+/* ------------- End of header ----------------- */
+
+/* ------------ Start of main tag ---------------*/
+
+main{
+  padding: 2rem 0;
+}
+
+
+
+
+
+
+
+/* ------------ End of main tag ---------------------*/
